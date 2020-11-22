@@ -1,0 +1,647 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-100 {
+    max-width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.div-1270 {
+    width: 127rem;
+    margin: 0 auto;
+}
+
+
+
+/*------------Calibri font------------*/
+
+@font-face { 
+    font-family: Calibri ; 
+    src: url(/fonts/Calibri\ Bold.TTF); 
+}
+
+@font-face { 
+    font-family: Calibri ; 
+    src: url(/fonts/Calibri\ Bold\ Italic.ttf); 
+}
+
+@font-face { 
+    font-family: Calibri ; 
+    src: url(/fonts/Calibri\ Italic.ttf); 
+}
+
+@font-face { 
+    font-family: Calibri ; 
+    src: url(/fonts/Calibri\ Light\ Italic.ttf); 
+}
+
+@font-face { 
+    font-family: Calibri ; 
+    src: url(/fonts/Calibri\ Regular.ttf); 
+}
+
+
+/*----------------Montserrat font-------------*/
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.eot');
+    src: url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraLight.eot');
+    src: url('Montserrat-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('Montserrat-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBold.eot');
+    src: url('Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.eot');
+    src: url('Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.eot');
+    src: url('Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Black.woff2') format('woff2'),
+        url('Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.eot');
+    src: url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.eot');
+    src: url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Light.eot');
+    src: url('Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*------------Titling font-------------*/
+
+@font-face{
+    font-family:'Titling Gothic Skyline';
+    src:url('../fonts/titling.eot');
+    src:url('../fonts/titling.eot?#iefix') 
+    format('embedded-opentype'),
+    url('../fonts/titling.woff') 
+    format('woff'),
+    url('../fonts/titling.ttf') 
+    format('truetype'),
+    url('../fonts/titling.svg#titling') 
+    format('svg');
+    font-weight:400;
+    font-style:normal
+}
+ 
+/*--------------Header----------*/
+
+.header-container.home {
+    background-color: transparent;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+.header-container {
+    background-color: #fff;
+    height: 8rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container.box-shadow {
+    box-shadow: 0 2px 25px rgba(0,0,0,.05);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header-container .logo-container {
+    text-decoration: none;
+    color: #141414;
+}
+
+.header-container .logo-container h3 {
+    font-size: 3.7rem;
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    color: #141414;
+}
+
+.header-ul {
+    margin-top: 3rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0rem;
+}
+
+.header-ul .menu-item {
+    padding-right: 3.4rem;
+}
+
+.header-ul .menu-item:last-child {
+    padding-right: 0rem;
+}
+ 
+.header-ul .menu-item a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: #141414;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+    transition: opacity .25s ease-in-out;
+}
+
+.header-ul .menu-item a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -0.8rem;
+    width: 0;
+    height: 0.2rem;
+    background-color: #141414;;
+    -webkit-transition: width .25s ease-in-out,right .25s ease-in-out,left .25s ease-in-out,bottom .4s;
+    transition: width .25s ease-in-out,right .25s ease-in-out,left .25s ease-in-out,bottom .4s;
+}
+
+.header-ul .menu-item a:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+/*--------------Home----------------*/
+
+.home-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    -webkit-transition: opacity .5s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .5s cubic-bezier(.215,.61,.355,1);
+    background-position: center;
+}
+
+.home-container .home-content {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.8rem;
+}
+
+.home-container .home-content h1 {
+    font: 100px/.83 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    display: block;
+    overflow: visible;
+}
+
+
+/*----------------Footer---------------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+ 
+footer .creation {
+    color: #141414;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+footer .creation:after {
+    content: '';
+    display: block;
+    margin-top: 0.5rem;
+    background-color: #787878;
+    transition: all 300ms cubic-bezier(1.000,0.000,0.600,1.000);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    top: 1.6rem;
+}
+
+footer .creation:hover:after {
+    transform: scaleX(1);
+}
+
+ /*--------------About-------------*/
+
+ .about-container {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 14rem;
+ }
+ 
+ .about-container h2 {
+     color: #212529;
+     font-size: 3.2rem;
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+     background: white;
+     display: inline-block;
+     margin: 0.5rem;
+     padding: 0 3rem;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+
+ .content {
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: 3rem;
+ }
+
+ .content p {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1.6rem;
+     color: #141414;
+     font-weight: 400;
+     line-height: 2.3rem;
+ }
+ 
+ .title-wrapper {
+    position: relative;
+    margin: 3rem auto 2rem;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    width: 35%;
+ }
+
+ .title-wrapper:before {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #757575;
+    text-align: center;
+    content: " ";
+    z-index: -1;
+ }
+
+ .content h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    color: #212529;
+    margin-bottom: 0;
+    margin-top: 7rem;
+ }
+
+
+ /*-----------------Social icons------------*/
+
+ footer .social-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ footer .social-ul .social-item {
+    margin-right: 2rem;
+}
+
+footer .social-ul .social-item:last-child {
+    margin-right: 0;
+}
+
+footer  .social-ul .social-item a .social {
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    background: #fff;
+    width: 3rem;
+    height: 3rem;
+    line-height: 6.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    border-radius: 30%;
+    -moz-box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 7px 18px -7px rgba(0, 0, 0, 0.18);
+    opacity: 0.99;
+}
+
+
+footer .social-ul .social-item a .social:before {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    top: 90%;
+    left: -110%;
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+footer .social-ul .social-item a .social i {
+    color: #3e1a77;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    font-size: 22px;
+    vertical-align: middle;
+    position: relative;
+    top: -18px;
+}
+
+footer .social-ul .social-item a .social.facebook i {
+    color: #3b5998;
+}
+
+footer .social-ul .social-item a .social.instagram i {
+    color: #df3e43;
+}
+
+footer .social-ul .social-item a .social.youtube i {
+    color: #c4302b;
+}
+
+footer .social-ul .social-item a .social.pinterest i {
+    color: #c4302b;
+}
+ 
+footer .social-ul .social-item a .social.instagram:before {
+	background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+footer .social-ul .social-item a .social.youtube:before {
+	background: #c4302b;
+}
+
+footer .social-ul .social-item a .social.pinterest:before {
+	background: #c4302b;
+}
+
+footer .social-ul .social-item a .social.facebook:before {
+	background: #3b5998;
+}
+
+footer .social-ul .social-item a .social:focus:hover {
+	top: -10%;
+	left: -10%;
+}
+
+footer .social-ul .social-item a .social:focus i {
+	color: #fff;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+footer .social-ul .social-item a .social:hover:before {
+	top: -10%;
+	left: -10%;
+}
+
+footer .social-ul .social-item a .social:hover i {
+	color: #fff;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/*--------------Portfolio-------------*/
+
+.portfolio-container {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 16rem;
+}
+
+.portfolio-container h2 {
+    text-align: center;
+}
+
+.portfolio-container .flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-container .box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+.portfolio-container .box .image-container {
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.portfolio-container .box .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.portfolio-container .box .image-container img:hover {
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+
+.portfolio-container  .title-wrapper h2 {
+    color: #212529;
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: white;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio-container .description-container h2 {
+    color: #212529;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: white;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.portfolio-container .description-container h2::after{
+    content: '';
+    border-bottom: 0.2rem solid #ff8c00;
+}
+
+.portfolio-container .description-container p {
+    color: #212529;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    font-weight: 400;
+    line-height: 139%;
+    margin: 0;
+    max-width: 70rem;
+}
+
+.portfolio-footer {
+    position: unset;
+}
+
+.portfolio-container .image-container {
+    width: 100vw;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+ 
+/*---------------Fancybox----------------*/
+.fancybox-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.fancybox-content {
+    background: transparent !important;
+}
+
+.fancy-link {
+    display: block;
+    text-decoration: none;
+    width: 49%;
+}
+
+@media (max-height: 576px) {
+    .fancybox-slide {
+        padding-left: 0; 
+        padding-right: 0;
+    }
+}
+ 
